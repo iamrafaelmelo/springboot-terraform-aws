@@ -79,7 +79,7 @@ make push-image
 
 ## Preparing entrypoint
 
-In ´infra/userdata.sh` replace `<docker-username>` to your real docker username.
+In `infra/userdata.sh` replace `<docker-username>` to your real docker username.
 
 ## Creating a programmatic user (Terraform)
 
@@ -160,7 +160,7 @@ terraform destroy
 
 - [ ] Store the Terraform state in a private AWS S3 Bucket (automatically)
 - [ ] Create a specficic user to IAC (Terraform) and used it to provision infra
-- [ ] Provision ECS private repository to store all app images instead store on Docker Hub
+- [ ] Provision ECR private repository to store all app images instead store on Docker Hub
 
 ## Links references
 
