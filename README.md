@@ -150,6 +150,14 @@ In EC2 page, click on EC2 instance created by Terraform, search by `Public IPV4 
 
 > The app url must be access without https, because is not fully configured.
 
+## Accessing EC2 instance via SSH
+
+```sh
+ssh -i \
+    ~/.ssh/id_rsa \ # private ssh key path
+    ec2-user@<public-ip-instance>
+```
+
 ## Destroying infrastructure provisioned
 
 ```sh
