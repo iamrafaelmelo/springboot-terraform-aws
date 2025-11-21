@@ -20,10 +20,7 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      run: mvn clean install -DskipTests
-  
-    - name: Checkout
-      uses: actions/checkout@v4
+      run: mvn -B package --file pom.xml
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
