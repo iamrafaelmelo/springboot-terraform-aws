@@ -1,6 +1,4 @@
 HELP.md
-target/*
-!target/.gitkeep
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -34,6 +32,4 @@ build/
 .vscode/
 
 ### Infra ###
-infra/*
-!infra/main.tf
-!infra/userdata.sh
+infra/aws/.*
